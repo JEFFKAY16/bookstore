@@ -6,7 +6,7 @@ import store from '../redux/configureStore';
 import Header from './Header';
 import Book from './Book';
 import Categories from './Categories';
-import AddBook from './AddBook';
+// import AddBook from './AddBook';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/book" exact element={<Book />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
-        <AddBook />
+        {/* <AddBook /> */}
       </BrowserRouter>
     </Provider>
   );
