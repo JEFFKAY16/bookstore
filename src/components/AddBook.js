@@ -6,13 +6,13 @@ import { addBook } from '../redux/books/books';
 
 export default function AddBook() {
   const dispatch = useDispatch();
-  const [title, setTitle] = useState('');
+  const [bookTitle, setTitle] = useState('');
   const submitBookToStore = (e) => {
     e.preventDefault();
 
     const newBook = {
       item_id: uuidv4(),
-      title,
+      title: bookTitle,
       category: 'Random',
       author: 'Jeff',
     };
