@@ -1,14 +1,16 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from '../redux/configureStore';
 import Header from './Header';
 import Book from './Book';
 import Categories from './Categories';
-import AddBook from './AddBook';
+// import AddBook from './AddBook';
 
 function App() {
   return (
-    <React.StrictMode>
+    <Provider store={store}>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -16,9 +18,9 @@ function App() {
           <Route path="/book" exact element={<Book />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
-        <AddBook />
+        {/* <AddBook /> */}
       </BrowserRouter>
-    </React.StrictMode>
+    </Provider>
   );
 }
 
