@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import Endpoints from '../Endpoints';
 import { addBook } from '../redux/books/books';
 
 export default function AddBook() {
@@ -10,12 +11,23 @@ export default function AddBook() {
     e.preventDefault();
 
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       category: 'Random',
       author: 'Jeff',
     };
-    dispatch(addBook(newBook));
+    // dispatch(addBook(newBook));
+    fetch(Endpoints.baseUrl, {
+      body: JSON.stringify(newBook),
+      method: 'POST',
+      headers: {
+        'Content-Type': 'Application/json',
+      },
+    }).then((response) => response.text()).then((data) => {
+      if (data === 'Created') {
+        dispatch(addBook(newBook));
+      }
+    }).catch((error) => console.log(error));
   };
 
   return (
