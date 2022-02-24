@@ -23,7 +23,7 @@ function App() {
         };
         dispatch(addBook(book));
       });
-    }).catch((error) => console.log(error));
+    });
   }, []);
   return (
     <BrowserRouter>

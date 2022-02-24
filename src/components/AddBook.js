@@ -27,7 +27,7 @@ export default function AddBook() {
       if (data === 'Created') {
         dispatch(addBook(newBook));
       }
-    }).catch((error) => console.log(error));
+    });
   };
 
   return (

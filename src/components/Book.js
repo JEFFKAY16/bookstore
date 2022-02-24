@@ -17,13 +17,10 @@ function Book() {
       body: JSON.stringify({
         item_id: id,
       }),
-    }).then((res) => res.text()).then((data) => {
-      console.log(data);
-      dispatch(removeBook(id));
-    }).catch((error) => console.log(error));
+    });
+    dispatch(removeBook(id));
   };
   const displayed = [];
-
   return (
     <>
       {
