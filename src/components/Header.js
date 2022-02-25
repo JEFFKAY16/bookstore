@@ -8,10 +8,10 @@ function Header() {
     <header key={0}>
       <ul key={0} className="d-flex">
         <h1 key={0} className="blue-text">Bookstore CMS</h1>
-        <Link to="/book">
+        <Link key={0}to="/book">
           <li key={0} className="link-tag">Books</li>
         </Link>
-        <Link to="/categories">
+        <Link key={0} to="/categories">
           <li key={0} className="link-tag">Categories</li>
         </Link>
       </ul>
