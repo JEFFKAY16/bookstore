@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import { FaUserAlt } from 'react-icons/fa';
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
           <li className="link-tag">Categories</li>
         </Link>
       </ul>
-      <p>User Icon</p>
+      <p className="icon-blue"><FaUserAlt /></p>
     </header>
   );
 }
