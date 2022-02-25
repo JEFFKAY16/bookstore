@@ -7,7 +7,6 @@ import Book from './Book';
 import Categories from './Categories';
 import Endpoints from '../Endpoints';
 import { addBook } from '../redux/books/books';
-// import AddBook from './AddBook';
 
 function App() {
   const dispatch = useDispatch();
