@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +17,7 @@ header {
   padding: 20px;
   border: 1px solid #e8e8e8;
   background: #fff;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 a {
@@ -59,7 +60,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .add-form {
@@ -89,16 +89,8 @@ li {
   justify-content: space-between;
 }
 
-.center-info {
-  padding: 0 80px;
-}
-
 .right-info {
   padding: 0 50px;
-}
-
-.vertical-border {
-  border-right: 2px solid #e8e8e8;
 }
 
 button {
@@ -128,6 +120,7 @@ button {
 
 .vertical-border {
   border-right: 2px solid #e8e8e8;
+  padding-right: 40px;
 }
 
 .center-info {
@@ -139,7 +132,6 @@ button {
 
 .category {
   color: #b8b7b7;
-  font-weight: bold;
   margin: 10px 0;
   font-size: 16px;
   font-weight: 200;
@@ -163,7 +155,7 @@ button {
 }
 
 .blue-text {
-  color:  #0290ff;
+  color: #0290ff;
 }
 
 .update-btn {
@@ -185,6 +177,7 @@ button {
 .high-five {
   font-size: 15px;
   font-weight: 200;
+  margin: 10px 0;
 }
 
 .title-form {
@@ -217,6 +210,7 @@ select {
   color: #fff;
   padding: 12px 20px;
   width: 220px;
+  cursor: pointer;
 }
 
 .icon-blue {
