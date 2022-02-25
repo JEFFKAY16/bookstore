@@ -44,7 +44,6 @@ function Book() {
                 </div>
                 <div className="second-info">
                   <div className="center-info">
-                    {/* <div className="progres-icon">Progress Icon</div> */}
                     <div style={{ width: 70, height: 70 }}>
                       <CircularProgressbar value={percentage} />
                     </div>

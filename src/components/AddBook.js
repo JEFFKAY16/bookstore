@@ -32,13 +32,13 @@ export default function AddBook() {
 
   return (
     <form className="add-new-book" onSubmit={(e) => submitBookToStore(e)}>
-      <div className="add-form horizontal-line-70">
-        <h2 className="title-form">ADD NEW BOOK</h2>
-        <input className="input-one" type="text" placeholder="Add Book" onChange={(e) => setTitle(e.target.value)} />
-        <select name="cars" id="cars">
-          <option value="Under Construction">Categories</option>
+      <div key={0} className="add-form horizontal-line-70">
+        <h2 key={1} className="title-form">ADD NEW BOOK</h2>
+        <input key={2} className="input-one" type="text" placeholder="Add Book" onChange={(e) => setTitle(e.target.value)} />
+        <select key={3} name="cars" id="cars">
+          <option key={4} value="Under Construction">Categories</option>
         </select>
-        <input className="inout-two" type="submit" value="ADD BOOK" />
+        <input key={5} className="inout-two" type="submit" value="ADD BOOK" />
       </div>
     </form>
   );
