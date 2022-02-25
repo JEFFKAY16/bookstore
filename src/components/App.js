@@ -27,12 +27,11 @@ function App() {
   return (
     <BrowserRouter>
       <Header key={0} />
-      <Routes>
-        <Route path="/" exact element={<Book />} />
-        <Route path="/book" exact element={<Book />} />
-        <Route path="/categories" element={<Categories />} />
+      <Routes key={1}>
+        <Route key={2} path="/" exact element={<Book />} />
+        <Route key={3} path="/book" exact element={<Book />} />
+        <Route key={4} path="/categories" element={<Categories />} />
       </Routes>
-      {/* <AddBook /> */}
     </BrowserRouter>
   );
 }
