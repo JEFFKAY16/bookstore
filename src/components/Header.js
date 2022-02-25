@@ -5,17 +5,17 @@ import { FaUserAlt } from 'react-icons/fa';
 
 function Header() {
   return (
-    <header>
-      <ul className="d-flex">
-        <h1 className="blue-text">Bookstore CMS</h1>
+    <header key={0}>
+      <ul key={0} className="d-flex">
+        <h1 key={0} className="blue-text">Bookstore CMS</h1>
         <Link to="/book">
-          <li className="link-tag">Books</li>
+          <li key={0} className="link-tag">Books</li>
         </Link>
         <Link to="/categories">
-          <li className="link-tag">Categories</li>
+          <li key={0} className="link-tag">Categories</li>
         </Link>
       </ul>
-      <p className="icon-blue"><FaUserAlt /></p>
+      <p key={0} className="icon-blue"><FaUserAlt /></p>
     </header>
   );
 }

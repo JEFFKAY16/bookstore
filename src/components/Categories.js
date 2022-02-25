@@ -3,8 +3,8 @@ import './App.css';
 
 function Categories() {
   return (
-    <div className="categories-space">
-      <h3>Under construction</h3>
+    <div key={0} className="categories-space">
+      <h3 key={1}>Under construction</h3>
     </div>
   );
 }

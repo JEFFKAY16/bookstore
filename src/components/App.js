@@ -26,7 +26,7 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      <Header />
+      <Header key={0} />
       <Routes>
         <Route path="/" exact element={<Book />} />
         <Route path="/book" exact element={<Book />} />
