@@ -15,7 +15,7 @@ function Header() {
           <li key={6} className="link-tag">Categories</li>
         </Link>
       </ul>
-      <p key={7} className="icon-blue"><FaUserAlt /></p>
+      <p key={7} className="icon-blue"><FaUserAlt key={8} /></p>
     </header>
   );
 }
